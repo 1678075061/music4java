@@ -20,9 +20,12 @@ public class PianoRoll {
      * @param ticks 时值
      * @throws InvalidMidiDataException
      */
+
     public void setNote(Note[] notes,int chan,int vol,int[] ticks) throws InvalidMidiDataException {
+        int tickTime=0;
         for (int i=0;i<notes.length;i++){
-            track.add(MidiUtil.makeMidiEvent(144,chan,notes[i],vol,ticks[i]));
+            tickTime+=ticks[i];
+            track.add(MidiUtil.makeMidiEvent(144,chan,notes[i],vol,tickTime));
         }
     }
     public void run(){
