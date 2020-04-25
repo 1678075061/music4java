@@ -1,3 +1,5 @@
+package com.midimusic;
+
 import javax.sound.midi.InvalidMidiDataException;
 
 public class Main {

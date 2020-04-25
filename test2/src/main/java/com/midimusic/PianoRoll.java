@@ -1,3 +1,4 @@
+package com.midimusic;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.Track;

@@ -1,3 +1,5 @@
+package com.midimusic;
+
 /**
  *  音符
  */
